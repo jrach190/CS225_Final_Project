@@ -1,4 +1,4 @@
-ximport javafx.scene.Scene;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
@@ -48,7 +48,7 @@ public class Board extends GameBoard{
 				i--;
 			}
 			boardlocs[choice][i] = turnmod2;
-			Connect4.Circles[choice][i].setFill( (turnmod2 == 1) ? Color.BLACK : Color.RED);
+			Connect4.Circles[choice][i].setFill( (turnmod2 == 1) ? Color.GREEN : Color.BLUE);
 			i=5;
 
 		} catch (IndexOutOfBoundsException e){
